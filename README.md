@@ -18,7 +18,17 @@ One of the most common and simplest strategies to handle imbalanced data is to u
 ![undersample](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/undersample.png)
 ![features_labels](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/features_labels.png)
 
+## split the train dataset and test dataset
 
+![train_test_split](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/train_test.png)
+
+## Cross validateion
+
+![Kfold](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/KFold.png)
+
+![Kfold_traindataset](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/train_test.png)
+
+![Kfold_output](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/cvOutput.png)
 
 ### 3. Oversampling the minority class.
 
