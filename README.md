@@ -1,5 +1,5 @@
 
-In this work we focus on how to properly cross-validate when we have imbalanced data. As a matter of fact, in the context of  credit crad fraud, we have datasets where we have two classes for the main outcome; normal samples and relevant samples. For example we might have a small percentages of relevant samples while the majority of samples might be normal. Outside of the  space, this is true (even more) for the case for example in a cancer detection application we might have a small percentages of patients with cancer (relevant samples) while the majority of samples might be healthy individuals.
+In this work we focus on how to properly cross-validate when we have imbalanced data. As a matter of fact, in the context of many credit crad fraud, we have datasets where we have two classes for the main outcome; normal samples and relevant samples. For example we might have a small percentages of relevant samples while the majority of samples might be normal. Outside of the  space, this is true (even more) for the case for example in a cancer detection application we might have a small percentages of patients with cancer (relevant samples) while the majority of samples might be healthy individuals.
 
 The main motivation behind the need to preprocess imbalanced data before we feed them into a classifier is that typically classifiers are more sensitive to detecting the majority class and less sensitive to the minority class. Thus, if we don't take care of the issue, the classification output will be biased, in many cases resulting in always predicting the majority class. Many methods have been proposed in the past few years to deal with imbalanced data. 
 
@@ -29,6 +29,14 @@ One of the most common and simplest strategies to handle imbalanced data is to u
 ![Kfold_traindataset](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/train_test.png)
 
 ![Kfold_output](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/cvOutput.png)
+
+Let's look at the result:
+
+![result1](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/prediction_undersampling1.png)
+
+![result2](https://github.com/duanluyun/DEALING-WITH-IMBALANCED-DATA-UNDERSAMPLING-OVERSAMPLING-AND-PROPER-CROSS-VALIDATION/blob/master/image/prediction_undersampling2.png)
+
+By undersampling, we solved the class imbalance issue, and increased the sensitivity of our models. However, results are very poor. A reason could indeed be that we trained our classifiers using few samples. In general, the more imbalanced the dataset the more samples will be discarded when undersampling, therefore throwing away potentially useful information. 
 
 ### 3. Oversampling the minority class.
 
