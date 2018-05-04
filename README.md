@@ -5,23 +5,24 @@ The main motivation behind the need to preprocess imbalanced data before we feed
 
 ## What can we do when we have imbalanced data? Mainly three things:
 
-### 1. Ignoring the problem.
+### 1. Ignoring the problem
 
-### 2. Undersampling the majority class.
-
-### 3. Oversampling the minority class.
-
-### (1)Ignoring the problem:
- 
 Building a classifier using the data as it is, would in most cases give us a prediction model that always returns the majority class.
 
-### (2)Undersampling the majority class:
+### 2. Undersampling the majority class
+
 One of the most common and simplest strategies to handle imbalanced data is to undersample the majority class. While different techniques have been proposed in the past, typically using more advanced methods did not bring any improvement with respect to simply selecting samples at random. So, for this analysis I will simply select n samples at random from the majority class, where n is the number of samples for the minority class, and use them during training phase, after excluding the sample to use for validation.
 
 ![input dataset](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/import%20dataset.png)
 ![value count](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/value_count.png)
 ![undersample](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/undersample.png)
 ![features_labels](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/features_labels.png)
+
+
+
+### 3. Oversampling the minority class.
+
+
 
 
 ## For more details :
