@@ -19,6 +19,10 @@ Building a classifier using the data as it is, would in most cases give us a pre
 One of the most common and simplest strategies to handle imbalanced data is to undersample the majority class. While different techniques have been proposed in the past, typically using more advanced methods did not bring any improvement with respect to simply selecting samples at random. So, for this analysis I will simply select n samples at random from the majority class, where n is the number of samples for the minority class, and use them during training phase, after excluding the sample to use for validation.
 
 ![input dataset](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/import%20dataset.png)
+![value count](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/value_count.png)
+![undersample](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/undersample.png)
+![features_labels](https://github.com/duanluyun/Credit-Card-Fraud-Detection/blob/master/image/features_labels.png)
+
 
 ## For more details :
 
